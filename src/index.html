@@ -10,21 +10,58 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="font-serif min-w-80">
-	<div class="text-center relative">
-		<img src="img/ukazka_brunch (copy).jpeg" alt="Ukázka jídla, pozadí"
-			class="mr-auto ml-auto h-svh w-full object-cover brightness-75" </img>
-		<div class="w-6 absolute top-3 right-4 text-white">
+<body class="font-serif min-w-80" id="home">
+
+	<div id="menu" class="h-0 w-full fixed top-0 left-0 bg-black/90 overflow-x-hidden duration-500 z-50">
+		<div class="absolute top-5 right-8 text-white h-14" id="closeMenu">
+			<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+				stroke-width="1.5" stroke="currentColor" class="size-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+			</svg>
+		</div>
+
+		<div class="relative top-1/4 w-full text-center mt-8">
+			<a class="p-2 text-4xl block duration-300 text-white" href="#">O Nás</a>
+			<a class="p-2 text-4xl block duration-300 text-white" href="#">Menu</a>
+			<a class="p-2 text-4xl block duration-300 text-white" href="#">Akce</a>
+			<a class="p-2 text-4xl block duration-300 text-white" href="#">Catering</a>
+			<a class="p-2 text-4xl block duration-300 text-white" href="#">Galerie</a>
+		</div>
+	</div>
+
+
+	<div class="block text-center fixed w-full top-0 z-40">
+		<a href="#home">
+			<img src="img/cafe33_logo_white.png" alt="cafe33 logo"
+				class="w-24 overflow-hidden sm:w-32 block p-2 top-3 float-left"></a>
+
+		<div class="h-svh">
+			<div class="absolute bottom-0 right-3 h-56 text-white">
+				<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+					viewBox="5 0 9 24" stroke-width="0.3" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M13.5 19.25 12 21m0 0-1.5-1.75M12 21V3" />
+				</svg>
+			</div>
+		</div>
+
+		<div class="w-6 absolute top-3 right-4 text-white" id="menuButton">
 			<hr class="mt-1.5 h-0.5 bg-white">
 			<hr class="mt-1.5 h-0.5 bg-white">
 			<hr class="mt-1.5 h-0.5 bg-white">
 		</div>
-		<div class="absolute top-96 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 pb-4 text-white ">
+	</div>
+
+	<div class="text-center relative">
+		<img src="img/ukazka_brunch_croped.jpeg" alt="Ukázka jídla, pozadí"
+			class="mr-auto ml-auto h-svh w-full object-cover brightness-75" </img>
+
+
+		<div class="absolute top-80 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 pb-4 text-white ">
 			<!-- <img src="img/cafe33_logo_white.png" alt="cafe33 logo" -->
 			<!-- 	class="w-40 sm:w-64 ml-auto mr-auto block bg-black/5 sm:bg-transparent"> -->
-			<h1 class="w-50 sm:w-64 ml-auto mr-auto block sm:bg-transparent text-5xl font-bold">Vítejte v
-				Cafe33
-			</h1>
+			<h1 class="w-50 sm:w-64 ml-auto mr-auto block sm:bg-transparent text-5xl font-bold">Cafe &
+				bistro </h1>
 
 			<h3 class=" mt-1 text-white text-lg">Hlavní 33, Senohraby</h3>
 
@@ -37,7 +74,8 @@
 			<div class="bg-black/30 p-5 sm:p-10 pt-1 mt-6 w-fit block ml-auto mr-auto rounded-full">
 				<h2 class="text-white text-4xl sm:text-5xl font-bold">Otevírací doba:</h2>
 				<ul class="mt-1 text-white text-lg md:text-2xl">
-					<li><span class="font-bold">Pondělní-Středa:&nbsp;</span>13:30-18:00</li>
+					<li><span class="font-bold">Pondělní-Středa:&nbsp;</span>13:30-18:00
+					</li>
 					<li><span class="font-bold">Čtvrtek:&nbsp;</span>11:00-21:00</li>
 					<li><span class="font-bold">Pátek:&nbsp;</span>9:00-22:00</li>
 					<li><span class="font-bold">Sobota:&nbsp;</span>8:00-22:00</li>
@@ -47,8 +85,9 @@
 				<button class="mt-4 text-white text-3xl border-white border px-4 py-1">Polední
 					menu</button>
 			</div>
-
 		</div>
+
+
 
 		<div class="text-center border-white overflow-hidden flex flex-col h-vh">
 
@@ -63,7 +102,8 @@
 						d="M 32.550491,148.48008 A -108.15144,-108.15144 0 0 1 140.70194,40.328644 -108.15144,-108.15144 0 0 1 248.85338,148.48008 -108.15144,-108.15144 0 0 1 140.70194,256.63153 -108.15144,-108.15144 0 0 1 32.550491,148.48008 Z" />
 					<text font-size="20" fill="#FFFFFF" letter-spacing="2" font-family="serif"
 						width="300">
-						<textPath xlink:href="#curve" startOffset="97">Skvělá káva</textPath>
+						<textPath xlink:href="#curve" startOffset="97">Skvělá káva
+						</textPath>
 					</text>
 				</svg>
 
@@ -83,13 +123,14 @@
 						d="M 32.550491,148.48008 A -108.15144,-108.15144 0 0 1 140.70194,40.328644 -108.15144,-108.15144 0 0 1 248.85338,148.48008 -108.15144,-108.15144 0 0 1 140.70194,256.63153 -108.15144,-108.15144 0 0 1 32.550491,148.48008 Z" />
 					<text font-size="20px" fill="#FFFFFF" letter-spacing="2" font-family="serif"
 						width="200">
-						<textPath xlink:href="#curve" startOffset="92">Zákusek k ní</textPath>
+						<textPath xlink:href="#curve" startOffset="70">Výborné zákusky
+						</textPath>
 					</text>
 				</svg>
 
 				<p
 					class="absolute bottom-11 mr-auto ml-auto left-0 right-0 text-white text-4xl font-bold">
-					Náš domácí</p>
+					Vlastní výroba</p>
 			</div>
 
 
@@ -111,7 +152,7 @@
 
 				<p
 					class="absolute bottom-11 mr-auto ml-auto left-0 right-0 text-white text-4xl font-bold">
-					Samozdřejmě</p>
+					Z kvalitních surovin</p>
 			</div>
 
 			<div class="h-1/4 relative border-4 ">
@@ -132,14 +173,14 @@
 
 				<p
 					class="absolute bottom-11 mr-auto ml-auto left-0 right-0 text-white text-4xl font-bold">
-					Hezky s Vínem</p>
+					S vínem</p>
 			</div>
 		</div>
 	</div>
 
 
-
-	<script href="../dist/main.js"></script>
+	<script src="../dist/navigation_menu.js"></script>
+	<script src="../dist/main.js"></script>
 </body>
 
-</html
+</html>
