@@ -37,7 +37,7 @@
 			<img src="img/cafe33_logo_white.png" alt="cafe33 logo"
 				class="w-32 overflow-hidden sm:w-32 block p-4 top-3 float-left"></a>
 
-		<div class="h-svh">
+		<div class="h-svh hidden">
 			<div class="absolute bottom-0 right-3 h-56 text-white">
 				<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none"
 					viewBox="5 0 9 24" stroke-width="0.3" stroke="currentColor" class="size-6">
@@ -89,8 +89,28 @@
 						<li><span class="font-bold">Neděle:&nbsp;</span>8:00-18:00</li>
 					</ul>
 
-					<button class="mt-4 text-white text-3xl border-white border px-4 py-1">Polední
+					<button id="lunchMenuButton"
+						class="mt-4 text-white text-3xl border-white border px-4 py-1">Polední
 						menu</button>
+
+					<div id="lunchMenuPopUp"
+						class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-scroll">
+						<div
+							class="rounded-lg bg-white/50 bg-slate-100 pt-14 mr-auto ml-auto border-2 border-solid border-slate-300/90 w-full">
+
+							<iframe src='https://www.zavolatobsluhu.cz/mp/czsts4g.pos/FyUc6a1E74'
+								id='pm-menu-jidelni-listek' border='0'
+								style='width: 100%; border: none; max-width: 1000px; min-width: 250px; min-height: 400px; margin: 15px auto; padding: 0px; box-sizing: border-box; display: block;'
+								allowTransparency='true'></iframe>
+							<script type='text/javascript'
+								src='https://api.ikelp.com/libs/js/iframeResizer.min.js'></script>
+							<script type='text/javascript'>
+								iFrameResize({checkOrigin: false}, '#pm-menu-jidelni-listek');
+							</script>
+
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -205,7 +225,7 @@
 		</div>
 	</div>
 
-
+	<script src="../dist/lunch_menu.js"></script>
 	<script src="../dist/navigation_menu.js"></script>
 	<script src="../dist/main.js"></script>
 </body>
