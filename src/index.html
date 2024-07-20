@@ -76,11 +76,13 @@
 			class="absolute top-48 md:top-56 left-[10%] w-4/5 pb-4 text-white md:w-full md:left-0 xl:mr-48 xl:w-3/4 xl:left-[12.5%] 2xl:w-3/5 2xl:left-[20%]">
 			<div class="md:float-left md:w-1/2">
 				<div
-					class="p-5 sm:p-7 sm:pt-16 sm:pb-16 mt-8 ml-auto mr-auto bg-black/30 md:bg-black/40 rounded-full md:rounded-lg inline-block max-w-max">
+					class="p-5 sm:p-8 sm:pt-16 sm:pb-16 mt-8 ml-auto mr-auto bg-black/30 md:bg-black/40 rounded-full md:rounded-lg md:inline-block max-w-max">
 
-					<h2 class="text-white text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-bold">
-						Otevírací&nbsp;doba:</h2>
-					<ul class="mt-1 text-white text-lg sm:text-2xl md:text-lg lg:text-2xl">
+					<h2
+						class="text-white text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-bold sm:-translate-y-10 md:translate-y-0">
+						Otevírací&nbsp;doba</h2>
+					<ul
+						class="mt-1 text-white text-lg sm:text-2xl md:text-lg lg:text-2xl sm:-translate-y-10 md:translate-y-0">
 						<li><span class="font-bold">Pondělní-Středa:&nbsp;</span>13:30-18:00
 						</li>
 						<li><span class="font-bold">Čtvrtek:&nbsp;</span>11:00-21:00</li>
@@ -90,28 +92,46 @@
 					</ul>
 
 					<button id="lunchMenuButton"
-						class="mt-4 text-white text-3xl border-white border px-4 py-1">Polední
+						class="mt-4 text-white text-3xl border-white border px-4 py-1 sm:-translate-y-10 md:translate-y-0">Polední
 						menu</button>
+
 
 					<div id="lunchMenuPopUp"
 						class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-scroll">
 						<div
-							class="rounded-lg bg-white/50 bg-slate-100 pt-14 mr-auto ml-auto border-2 border-solid border-slate-300/90 w-full">
+							class="relative rounded-lg bg-white/90 bg-slate-100 mt-20 mr-auto ml-auto w-fit h-fit">
 
-							<iframe src='https://www.zavolatobsluhu.cz/mp/czsts4g.pos/FyUc6a1E74'
-								id='pm-menu-jidelni-listek' border='0'
-								style='width: 100%; border: none; max-width: 1000px; min-width: 250px; min-height: 400px; margin: 15px auto; padding: 0px; box-sizing: border-box; display: block;'
+							<button class="absolute top-3 right-2 text-black h-14"
+								id="closeLunchMenu">
+								<svg class="h-full w-full"
+									xmlns="http://www.w3.org/2000/svg" fill="none"
+									viewBox="0 0 24 24" stroke-width="1.5"
+									stroke="currentColor" class="size-6">
+									<path stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 18 18 6M6 6l12 12" />
+								</svg>
+							</button>
+
+							<iframe src='https://www.zavolatobsluhu.cz/m/czsts4g.pos'
+								id='pm-week-lunch-menu' border='0'
+								class="pl-8 pr-8 pt-16 "
+								style='width:100%;border:none;max-width:900px;min-width:250px; box-sizing: border-box;'
 								allowTransparency='true'></iframe>
 							<script type='text/javascript'
 								src='https://api.ikelp.com/libs/js/iframeResizer.min.js'></script>
 							<script type='text/javascript'>
-								iFrameResize({checkOrigin: false}, '#pm-menu-jidelni-listek');
+								iFrameResize({checkOrigin: false}, '#pm-week-lunch-menu');
 							</script>
 
 						</div>
 					</div>
 
 				</div>
+
+				<button
+					class="mt-8 sm:mt-0 text-white text-4xl md:hidden border-white border px-4 py-1 sm:-translate-y-20 md:translate-y-0">Rezervace</button>
+
 			</div>
 
 			<div class="md:float-right md:w-1/2 invisible md:visible">
@@ -119,19 +139,13 @@
 					class="p-5 sm:p-7 sm:pt-16 sm:pb-16 mt-8 ml-auto mr-auto bg-black/30 md:bg-black/40 rounded-full md:rounded-lg inline-block max-w-max">
 
 					<h2 class="text-white text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-bold">
-						Otevírací&nbsp;doba:</h2>
-					<ul class="mt-1 text-white text-lg sm:text-2xl md:text-lg lg:text-2xl">
-						<li><span class="font-bold">Pondělní-Středa:&nbsp;</span>13:30-18:00
-						</li>
-						<li><span class="font-bold">Čtvrtek:&nbsp;</span>11:00-21:00</li>
-						<li><span class="font-bold">Pátek:&nbsp;</span>9:00-22:00</li>
-						<li><span class="font-bold">Sobota:&nbsp;</span>8:00-22:00</li>
-						<li><span class="font-bold">Neděle:&nbsp;</span>8:00-18:00</li>
-					</ul>
-
+						Rezervace stolu</h2>
+					<p class="text-2xl">Doporučejeme na víkendové<br>brunche v dopoledních hodinách
+					</p>
 					<button
-						class="mt-4 text-white text-3xl md:hidden border-white border px-4 py-1">Polední
-						menu</button>
+						class="mt-4 text-white text-3xl  border-white border px-4 py-1">Rezervace</button>
+					<!-- <a -->
+					<!-- 	href="https://www.google.com/maps/place/Kav%C3%A1rna+caf%C3%A933+Senohraby/@49.8981067,14.7251047,17z/data=!3m1!4b1!4m6!3m5!1s0x470c791a1d3ad793:0x66159533c5f61918!8m2!3d49.8981033!4d14.7276796!16s%2Fg%2F11jk90lqt_?entry=ttu">Adresa</a> -->
 				</div>
 			</div>
 		</div>
