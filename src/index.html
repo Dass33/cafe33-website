@@ -13,7 +13,8 @@
 <body class="font-serif min-w-80" id="home">
 
 	<div id="menu" class="h-0 w-full fixed top-0 left-0 bg-black/90 overflow-x-hidden duration-500 z-50">
-		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14" id="closeMenu">
+		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent"
+			id="closeMenu">
 			<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 				stroke-width="1.5" stroke="currentColor" class="size-6">
 				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -32,7 +33,7 @@
 	</div>
 
 
-	<div class="block text-center fixed w-full top-0 z-40">
+	<div id="header" class="block text-center fixed w-full top-0 z-40">
 		<a href="#home">
 			<img src="img/cafe33_logo_white.png" alt="cafe33 logo"
 				class="w-32 overflow-hidden sm:w-32 block p-4 top-3 float-left"></a>
@@ -47,7 +48,8 @@
 			</div>
 		</div>
 
-		<button class="w-9 absolute top-1 right-4 lg:right-8 lg:top-4 text-white" id="menuButton">
+		<button class="w-9 absolute top-1 right-4 lg:right-8 lg:top-4 text-white bg-transparent"
+			id="menuButton">
 			<hr class="mt-3 h-0.5 bg-white">
 			<hr class="mt-3 h-0.5 bg-white">
 			<hr class="mt-3 h-0.5 bg-white">
@@ -92,7 +94,7 @@
 					</ul>
 
 					<button id="lunchMenuButton"
-						class="mt-4 text-white text-3xl border-white border px-4 py-1 sm:-translate-y-10 md:translate-y-0">Polední
+						class="mt-4 text-white text-3xl border-white border px-4 py-1 sm:-translate-y-10 md:translate-y-0 bg-transparent">Polední
 						menu</button>
 
 
@@ -101,7 +103,7 @@
 						<div
 							class="relative rounded-lg bg-white/90 bg-slate-100 mt-20 mr-auto ml-auto w-fit h-fit">
 
-							<button class="absolute top-3 right-2 text-black h-14"
+							<button class="absolute top-3 right-2 text-black h-14 bg-transparent"
 								id="closeLunchMenu">
 								<svg class="h-full w-full"
 									xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -129,8 +131,33 @@
 
 				</div>
 
-				<button
-					class="mt-8 sm:mt-0 text-white text-4xl md:hidden border-white border px-4 py-1 sm:-translate-y-20 md:translate-y-0">Rezervace</button>
+				<button id="reservationButton1"
+					class="mt-8 sm:mt-0 text-white text-4xl md:hidden border-white border px-4 py-1 sm:-translate-y-20 md:translate-y-0 bg-transparent">Rezervace</button>
+
+				<div id="reservationPopUp"
+					class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-scroll">
+					<div
+						class="relative rounded-lg bg-white/90 bg-slate-100 mr-auto ml-auto w-fit h-fit max-w-[780px]">
+
+						<button class="absolute top-3 right-2 text-black h-14 bg-transparent"
+							id="closeReservationMenu">
+							<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg"
+								fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M6 18 18 6M6 6l12 12" />
+							</svg>
+						</button>
+
+						<div id="growitoForm_pi60tctubt2hecwhspfoufbjyhtptjdj"
+							class="p-10 text-black">
+							<script type="module" crossorigin=""
+								src="https://growito.app/rest/jsform/pi60tctubt2hecwhspfoufbjyhtptjdj"></script>
+						</div>
+
+					</div>
+				</div>
+
 
 			</div>
 
@@ -142,8 +169,8 @@
 						Rezervace stolu</h2>
 					<p class="text-2xl">Doporučejeme na víkendové<br>brunche v dopoledních hodinách
 					</p>
-					<button
-						class="mt-4 text-white text-3xl  border-white border px-4 py-1">Rezervace</button>
+					<button id="reservationButton2"
+						class="mt-4 text-white text-3xl border-white border px-4 py-1 bg-transparent">Rezervace</button>
 					<!-- <a -->
 					<!-- 	href="https://www.google.com/maps/place/Kav%C3%A1rna+caf%C3%A933+Senohraby/@49.8981067,14.7251047,17z/data=!3m1!4b1!4m6!3m5!1s0x470c791a1d3ad793:0x66159533c5f61918!8m2!3d49.8981033!4d14.7276796!16s%2Fg%2F11jk90lqt_?entry=ttu">Adresa</a> -->
 				</div>
@@ -239,6 +266,7 @@
 		</div>
 	</div>
 
+	<script src="../dist/reservation.js"></script>
 	<script src="../dist/lunch_menu.js"></script>
 	<script src="../dist/navigation_menu.js"></script>
 	<script src="../dist/main.js"></script>

@@ -3,3 +3,106 @@
 @tailwind utilities;
 
 
+/* General form container styling */
+.form-container {
+	background-color: transparent;
+	/* white background */
+	color: white;
+	/* black text */
+	padding: 5px;
+	padding-top: 0rem;
+	border-radius: 8px;
+	font-family: serif, sans-serif;
+}
+
+/* Fieldset and legend styling */
+.form-section {
+	margin-bottom: 0px;
+	border: none;
+}
+
+.section-legend {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 0px;
+	color: black;
+	/* dark grey text */
+}
+
+/* Form element styling */
+.form-section-flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.formEl {
+	flex-basis: 100%;
+}
+
+.formEl-title {
+	display: block;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+/* Input and textarea styling */
+input.form-control,
+textarea.form-control,
+input.date-input {
+	margin-top: 0;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+
+input.date-input.flatpickr-mobile {
+	padding: 0;
+}
+
+textarea.form-control {
+	resize: vertical;
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+	color: #999;
+}
+
+/* Error message styling */
+.form-field-error {
+	color: red;
+	font-size: 0.9em;
+	margin-top: 5px;
+}
+
+/* Agreement checkbox and label styling */
+.agreement {
+	display: flex;
+	align-items: center;
+	color: black;
+}
+
+.agreement input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.agreement .agreeLink p {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+/* Submit button styling */
+.submit {
+	background-color: var(--51937f25);
+	/* black background */
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+}

@@ -1,19 +1,18 @@
-const lunchMenuPopup = document.getElementById("lunchMenuPopUp");
+const lunchMenuPopUp = document.getElementById("lunchMenuPopUp")
 const lunchMenuButton = document.getElementById("lunchMenuButton");
 const lunchCloseButton = document.getElementById("closeLunchMenu");
-const lunchMenuPopUp = document.getElementById("lunchMenuPopUp")
 
-if (lunchMenuPopup && lunchMenuButton) {
+if (lunchMenuPopUp && lunchMenuButton) {
 	lunchMenuButton.addEventListener("click", () => {
-		lunchMenuPopup.style.display = "block";
+		lunchMenuPopUp.style.display = "block";
 	});
 }
 
 
 
-if (lunchCloseButton && lunchMenuPopup) {
+if (lunchCloseButton && lunchMenuPopUp) {
 	lunchCloseButton.addEventListener("click", () => {
-		lunchMenuPopup.style.display = "none";
+		lunchMenuPopUp.style.display = "none";
 	});
 }
 if (lunchMenuPopUp) {
