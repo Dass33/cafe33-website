@@ -2,8 +2,18 @@ const mapMenuPopUp = document.getElementById("mapMenuPopUp")
 const mapButton = document.getElementById("mapButton");
 const mapIcon = document.getElementById("mapIcon");
 const mapCloseIcon = document.getElementById("mapCloseIcon");
+const backgroundDiv = document.getElementById("backgroundDiv");
 
 let isMenuOpen = false;
+
+function closeMap() {
+	if (mapMenuPopUp && mapIcon && mapCloseIcon) {
+		mapMenuPopUp.style.display = "none";
+		mapIcon.style.display = "block";
+		mapCloseIcon.style.display = "none";
+		isMenuOpen = false;
+	}
+}
 
 if (mapMenuPopUp && mapButton && mapIcon && mapCloseIcon) {
 	mapButton.addEventListener("click", () => {
@@ -13,17 +23,17 @@ if (mapMenuPopUp && mapButton && mapIcon && mapCloseIcon) {
 			mapCloseIcon.style.display = "block";
 			isMenuOpen = true;
 		}
-		else {
-			mapMenuPopUp.style.display = "none";
-			mapIcon.style.display = "block";
-			mapCloseIcon.style.display = "none";
-			isMenuOpen = false;
-		}
+		else closeMap();
 	});
 }
 
 if (mapMenuPopUp) {
 	mapMenuPopUp.addEventListener("click", () => {
-		mapMenuPopUp.style.display = "none";
+		closeMap();
+	});
+}
+if (backgroundDiv) {
+	backgroundDiv.addEventListener("click", () => {
+		closeMap();
 	});
 }

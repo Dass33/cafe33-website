@@ -1,15 +1,15 @@
-function openNav(menuButton: HTMLElement) {
+function openNav() {
 	const menu = document.getElementById("menu");
-	if (menu) {
+	if (menu && menuButton) {
 		menu.style.height = "100%";
 		menuButton.style.visibility = "hidden";
 	}
 }
 
-function closeNav(menuButton: HTMLElement) {
+function closeNav() {
 	const menu = document.getElementById("menu");
 
-	if (menu) {
+	if (menu && menuButton) {
 		menu.style.height = "0%";
 		setTimeout(() => {
 			menuButton.style.visibility = "visible";
@@ -21,9 +21,9 @@ const menuButton = document.getElementById("menuButton");
 const closeMenu = document.getElementById("closeMenu");
 
 if (menuButton) {
-	menuButton.addEventListener("click", () => openNav(menuButton));
+	menuButton.addEventListener("click", () => openNav());
 }
 
 if (closeMenu && menuButton) {
-	closeMenu.addEventListener("click", () => closeNav(menuButton));
+	closeMenu.addEventListener("click", () => closeNav());
 }
