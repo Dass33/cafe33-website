@@ -13,7 +13,7 @@
 <body class="font-serif min-w-80" id="home">
 
 	<div id="menu" class="h-0 w-full fixed top-0 left-0 bg-black/90 overflow-x-hidden duration-500 z-50">
-		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent"
+		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent hover:bg-transparent hover:text-white"
 			id="closeMenu">
 			<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 				stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -21,13 +21,14 @@
 			</svg>
 		</button>
 
-		<div class="relative text-4xl md:text-5xl top-28 sm:top-36 w-min block ml-auto mr-auto text-center">
-			<a class="p-2 block text-white border border-white mb-5" href="#">Menu</a>
-			<a class="p-2 block text-white border border-white mb-5" href="#">Rezervace</a>
-			<a class="p-2 block text-white border border-white mb-5" href="#">Catering</a>
-			<a class="p-2 block text-white border border-white mb-5" href="#">Akce</a>
-			<a class="p-2 block text-white border border-white mb-5" href="#">Galerie</a>
-			<a class="p-2 block text-white border border-white mb-5" href="#">O
+		<div
+			class="relative text-4xl md:text-5xl top-28 sm:top-36 w-min block ml-auto mr-auto text-center text-white ">
+			<a class="p-2 block border border-white mb-5" href="#">Menu</a>
+			<a class="p-2 block border border-white mb-5" href="#">Rezervace</a>
+			<a class="p-2 block border border-white mb-5" href="#">Catering</a>
+			<a class="p-2 block border border-white mb-5" href="#">Akce</a>
+			<a class="p-2 block border border-white mb-5" href="#">Galerie</a>
+			<a class="p-2 block border border-white mb-5" href="#">O
 				nás</a>
 		</div>
 	</div>
@@ -48,12 +49,69 @@
 			</div>
 		</div>
 
-		<button class="w-9 absolute top-1 right-4 lg:right-8 lg:top-4 text-white bg-transparent"
+		<button class="w-9 absolute top-1 right-4 lg:right-8 lg:top-4 text-white bg-transparent hover:bg-transparent hover:text-white"
 			id="menuButton">
-			<hr class="mt-3 h-0.5 bg-white">
+			<hr class="mt-3 h-0.5 bg-white hover:bg-transparent hover:text-white">
 			<hr class="mt-3 h-0.5 bg-white">
 			<hr class="mt-3 h-0.5 bg-white">
 		</button>
+	</div>
+
+	<div id="footerLeft" class="block text-center fixed w-fit bottom-0 left-0 z-40">
+		<a href="https://www.facebook.com/cafe33.cz/">
+			<svg class="absolute block w-7 left-[26px] bottom-20 text-white" aria-hidden="true"
+				focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+				<path fill="currentColor"
+					d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+					class=""></path>
+			</svg>
+		</a>
+
+		<a href="https://www.instagram.com/cafe33.cz/">
+			<svg class="w-20 overflow-hidden block p-4 bottom-3 float-left text-white" aria-hidden="true"
+				data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 448 512">
+				<path fill="currentColor"
+					d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+					class=""></path>
+			</svg>
+
+		</a>
+	</div>
+
+
+	<div id="footerRight" class="block text-center fixed w-fit right-0 bottom-0 z-40">
+
+		<button class="w-9 absolute right-6 lg:right-8 bottom-4 text-white bg-transparent hover:bg-transparent hover:text-white"
+			id="mapButton">
+
+			<svg id="mapIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+				stroke-width="1.5" stroke="currentColor" class="size-14">
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+			</svg>
+
+			<svg id="mapCloseIcon" class="hidden absolute bottom-0 -right-3"
+				xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+				stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M1 23 23 1M1 1l22 22" />
+			</svg>
+
+			<div class="h-svh hidden">
+				<div class="absolute right-3 h-56 text-white">
+					<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+						viewBox="5 0 9 24" stroke-width="0.3" stroke="currentColor"
+						class="size-6">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M13.5 19.25 12 21m0 0-1.5-1.75M12 21V3" />
+					</svg>
+				</div>
+			</div>
+		</button>
+
 	</div>
 
 	<div class="text-center relative">
@@ -94,12 +152,12 @@
 					</ul>
 
 					<button id="lunchMenuButton"
-						class="mt-4 text-white text-3xl border-white border px-4 py-1 sm:-translate-y-10 md:translate-y-0 bg-transparent">Polední
-						menu</button>
+						class="mt-4 text-white text-3xl border-white border px-4 py-1 sm:-translate-y-10 md:translate-y-0 bg-transparent hover:bg-transparent hover:text-white">
+						Polední menu</button>
 
 
 					<div id="lunchMenuPopUp"
-						class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-scroll">
+						class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-y-scroll hover:bg-transparent hover:text-white">
 						<div
 							class="relative rounded-lg bg-white/90 bg-slate-100 mt-20 mr-auto ml-auto w-fit h-fit">
 
@@ -132,7 +190,7 @@
 				</div>
 
 				<button id="reservationButton1"
-					class="mt-8 sm:mt-0 text-white text-4xl md:hidden border-white border px-4 py-1 sm:-translate-y-20 md:translate-y-0 bg-transparent">Rezervace</button>
+					class="mt-8 sm:mt-0 text-white text-4xl md:hidden border-white border px-4 py-1 sm:-translate-y-20 md:translate-y-0 bg-transparent hover:bg-transparent hover:text-white">Rezervace</button>
 
 				<div id="reservationPopUp"
 					class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-scroll">
@@ -149,12 +207,24 @@
 							</svg>
 						</button>
 
-						<div id="growitoForm_pi60tctubt2hecwhspfoufbjyhtptjdj"
-							class="p-10 text-black">
+						<div id="growitoForm_pi60tctubt2hecwhspfoufbjyhtptjdj" class="p-10">
 							<script type="module" crossorigin=""
 								src="https://growito.app/rest/jsform/pi60tctubt2hecwhspfoufbjyhtptjdj"></script>
 						</div>
 
+					</div>
+				</div>
+
+
+				<div id="mapMenuPopUp"
+					class="hidden fixed z-10 left-0 md:left-[20%] lg:left-[25%] top-0 w-full md:w-3/5 lg:w-1/2 h-full hover:bg-transparent hover:text-white">
+					<div
+						class="relative rounded-lg bg-white/90 bg-slate-100 mt-16 mr-auto ml-auto w-full h-5/6">
+
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.0371036187958!2d14.72510467678171!3d49.8981067269795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c791a1d3ad793%3A0x66159533c5f61918!2sKav%C3%A1rna%20caf%C3%A933%20Senohraby!5e0!3m2!1sen!2scz!4v1721651598801!5m2!1sen!2scz"
+							style="border:0;" allowfullscreen="" loading="lazy"
+							class="rounded-lg w-full h-full" title="Directioins to Cafe33"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 
@@ -170,9 +240,7 @@
 					<p class="text-2xl">Doporučejeme na víkendové<br>brunche v dopoledních hodinách
 					</p>
 					<button id="reservationButton2"
-						class="mt-4 text-white text-3xl border-white border px-4 py-1 bg-transparent">Rezervace</button>
-					<!-- <a -->
-					<!-- 	href="https://www.google.com/maps/place/Kav%C3%A1rna+caf%C3%A933+Senohraby/@49.8981067,14.7251047,17z/data=!3m1!4b1!4m6!3m5!1s0x470c791a1d3ad793:0x66159533c5f61918!8m2!3d49.8981033!4d14.7276796!16s%2Fg%2F11jk90lqt_?entry=ttu">Adresa</a> -->
+						class="mt-4 text-white text-3xl border-white border px-4 py-1 bg-transparent hover:bg-transparent hover:text-white">Rezervace</button>
 				</div>
 			</div>
 		</div>
@@ -266,6 +334,7 @@
 		</div>
 	</div>
 
+	<script src="../dist/map_menu.js"></script>
 	<script src="../dist/reservation.js"></script>
 	<script src="../dist/lunch_menu.js"></script>
 	<script src="../dist/navigation_menu.js"></script>

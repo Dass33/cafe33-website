@@ -10,6 +10,7 @@ if (reservationPopup && headerDiv) {
 		reservationButton1.addEventListener("click", () => {
 			reservationPopup.style.display = "block";
 			headerDiv.style.display = "none";
+			if (mapIcon) mapIcon.style.display = "none";
 		});
 	}
 
@@ -17,6 +18,7 @@ if (reservationPopup && headerDiv) {
 		reservationButton2.addEventListener("click", () => {
 			reservationPopup.style.display = "block";
 			headerDiv.style.display = "none";
+			if (mapIcon) mapIcon.style.display = "none";
 		});
 	}
 }
@@ -25,10 +27,6 @@ if (reservationCloseButton && reservationPopup && headerDiv) {
 	reservationCloseButton.addEventListener("click", () => {
 		reservationPopup.style.display = "none";
 		headerDiv.style.display = "block";
+		if (mapIcon) mapIcon.style.display = "block";
 	});
 }
-// if () {
-// 	lunchMenuPopUp.addEventListener("click", () => {
-// 		lunchMenuPopUp.style.display = "none";
-// 	});
-// }
