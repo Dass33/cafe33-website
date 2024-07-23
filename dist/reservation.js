@@ -8,16 +8,21 @@ if (reservationPopup) {
     reservationButtons.forEach((element) => {
         element.addEventListener("click", () => {
             reservationPopup.style.display = "block";
+            document.body.style.overflowY = "hidden";
             closeNav();
             if (mapIcon)
                 mapIcon.style.display = "none";
+            if (headerDiv)
+                headerDiv.style.display = "none";
         });
     });
 }
-if (reservationCloseButton && reservationPopup && headerDiv) {
+if (reservationCloseButton && reservationPopup) {
     reservationCloseButton.addEventListener("click", () => {
         reservationPopup.style.display = "none";
-        headerDiv.style.display = "block";
+        document.body.style.overflowY = "scroll";
+        if (headerDiv)
+            headerDiv.style.display = "block";
         if (mapIcon)
             mapIcon.style.display = "block";
     });
