@@ -12,6 +12,8 @@ function closeMap() {
 		mapIcon.style.display = "block";
 		mapCloseIcon.style.display = "none";
 		isMenuOpen = false;
+		if (footerLeft) footerLeft.style.display = "block";
+		if (headerDiv) headerDiv.style.display = "block";
 	}
 }
 
@@ -22,6 +24,8 @@ if (mapMenuPopUp && mapButton && mapIcon && mapCloseIcon) {
 			mapIcon.style.display = "none";
 			mapCloseIcon.style.display = "block";
 			isMenuOpen = true;
+			if (footerLeft) footerLeft.style.display = "none";
+			if (headerDiv) headerDiv.style.display = "none";
 		}
 		else closeMap();
 	});

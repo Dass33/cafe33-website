@@ -6,6 +6,10 @@ function openNav() {
     if (menu && menuButton) {
         menu.style.height = "100%";
         menuButton.style.visibility = "hidden";
+        if (mapIcon)
+            mapIcon.style.display = "none";
+        if (footerLeft)
+            footerLeft.style.display = "none";
     }
 }
 function closeNav() {
@@ -16,6 +20,10 @@ function closeNav() {
             menuButton.style.visibility = "visible";
         }, 400);
     }
+    if (mapIcon)
+        mapIcon.style.display = "block";
+    if (footerLeft)
+        footerLeft.style.display = "block";
 }
 if (menuButton) {
     menuButton.addEventListener("click", () => {
