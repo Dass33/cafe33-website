@@ -5,11 +5,11 @@ const headerDiv = document.getElementById("header");
 
 const reservationButtons = Array.from(document.getElementsByClassName("reservation"));
 
-if (reservationPopup && headerDiv) {
+if (reservationPopup) {
 	reservationButtons.forEach((element) => {
 		element.addEventListener("click", () => {
 			reservationPopup.style.display = "block";
-			headerDiv.style.display = "none";
+			closeNav();
 			if (mapIcon) mapIcon.style.display = "none";
 		});
 	});
