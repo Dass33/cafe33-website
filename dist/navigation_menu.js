@@ -10,6 +10,7 @@ function openNav() {
             mapIcon.style.display = "none";
         if (footerLeft)
             footerLeft.style.display = "none";
+        document.body.style.overflowY = "hidden";
     }
 }
 function closeNav() {
@@ -24,6 +25,7 @@ function closeNav() {
         mapIcon.style.display = "block";
     if (footerLeft)
         footerLeft.style.display = "block";
+    document.body.style.overflowY = "scroll";
 }
 if (menuButton) {
     menuButton.addEventListener("click", () => {
