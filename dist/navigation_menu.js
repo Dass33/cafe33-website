@@ -1,6 +1,7 @@
 "use strict";
 const menuButton = document.getElementById("menuButton");
 const closeMenu = document.getElementById("closeMenu");
+const navButtons = Array.from(document.getElementsByClassName("navButton"));
 function openNav() {
     const menu = document.getElementById("menu");
     if (menu && menuButton) {
@@ -19,12 +20,12 @@ function closeNav() {
         menu.style.height = "0%";
         setTimeout(() => {
             menuButton.style.visibility = "visible";
+            if (mapIcon)
+                mapIcon.style.display = "block";
+            if (footerLeft)
+                footerLeft.style.display = "block";
         }, 400);
     }
-    if (mapIcon)
-        mapIcon.style.display = "block";
-    if (footerLeft)
-        footerLeft.style.display = "block";
     document.body.style.overflowY = "scroll";
 }
 if (menuButton) {
@@ -37,7 +38,18 @@ if (menuButton) {
 if (closeMenu && menuButton) {
     closeMenu.addEventListener("click", () => {
         closeNav();
-        if (headerDiv)
-            headerDiv.style.display = "block";
+        setTimeout(() => {
+            if (headerDiv)
+                headerDiv.style.display = "block";
+        }, 400);
     });
 }
+navButtons.forEach((navButton) => {
+    navButton.addEventListener("click", () => {
+        var _a;
+        const navTo = `../index.html#${(_a = (navButton.textContent)) === null || _a === void 0 ? void 0 : _a.toLowerCase()}`;
+        if (navTo)
+            window.location.href = navTo;
+        closeNav();
+    });
+});
