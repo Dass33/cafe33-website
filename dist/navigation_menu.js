@@ -9,8 +9,8 @@ function openNav() {
         menuButton.style.visibility = "hidden";
         if (mapIcon)
             mapIcon.style.display = "none";
-        if (footerLeft)
-            footerLeft.style.display = "none";
+        if (headerDiv)
+            headerDiv.style.display = "none";
         document.body.style.overflowY = "hidden";
     }
 }
@@ -22,8 +22,8 @@ function closeNav() {
             menuButton.style.visibility = "visible";
             if (mapIcon)
                 mapIcon.style.display = "block";
-            if (footerLeft)
-                footerLeft.style.display = "block";
+            if (headerDiv)
+                headerDiv.style.display = "block";
         }, 400);
     }
     document.body.style.overflowY = "scroll";
@@ -47,7 +47,7 @@ if (closeMenu && menuButton) {
 navButtons.forEach((navButton) => {
     navButton.addEventListener("click", () => {
         var _a;
-        const navTo = `../index.html#${(_a = (navButton.textContent)) === null || _a === void 0 ? void 0 : _a.toLowerCase()}`;
+        const navTo = `./index.html#${(_a = (navButton.textContent)) === null || _a === void 0 ? void 0 : _a.toLowerCase()}`;
         if (navTo)
             window.location.href = navTo;
         closeNav();

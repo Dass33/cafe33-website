@@ -9,7 +9,7 @@ function openNav() {
 		menu.style.height = "100%";
 		menuButton.style.visibility = "hidden";
 		if (mapIcon) mapIcon.style.display = "none";
-		if (footerLeft) footerLeft.style.display = "none";
+		if (headerDiv) headerDiv.style.display = "none";
 		document.body.style.overflowY = "hidden"
 	}
 }
@@ -22,7 +22,7 @@ function closeNav() {
 		setTimeout(() => {
 			menuButton.style.visibility = "visible";
 			if (mapIcon) mapIcon.style.display = "block";
-			if (footerLeft) footerLeft.style.display = "block";
+			if (headerDiv) headerDiv.style.display = "block";
 		}, 400);
 	}
 	document.body.style.overflowY = "scroll"
@@ -48,7 +48,7 @@ if (closeMenu && menuButton) {
 navButtons.forEach((navButton) => {
 	navButton.addEventListener("click", () => {
 
-		const navTo = `../index.html#${(navButton.textContent)?.toLowerCase()}`;
+		const navTo = `./index.html#${(navButton.textContent)?.toLowerCase()}`;
 		if (navTo) window.location.href = navTo;
 		closeNav();
 	});
