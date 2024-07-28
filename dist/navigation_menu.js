@@ -2,6 +2,7 @@
 const menuButton = document.getElementById("menuButton");
 const closeMenu = document.getElementById("closeMenu");
 const navButtons = Array.from(document.getElementsByClassName("navButton"));
+const homeButtons = Array.from(document.getElementsByClassName("homeButton"));
 function openNav() {
     const menu = document.getElementById("menu");
     if (menu && menuButton) {
@@ -50,6 +51,12 @@ navButtons.forEach((navButton) => {
         const navTo = `./index.html#${(_a = (navButton.textContent)) === null || _a === void 0 ? void 0 : _a.toLowerCase()}`;
         if (navTo)
             window.location.href = navTo;
+        closeNav();
+    });
+});
+homeButtons.forEach((homeButton) => {
+    homeButton.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
         closeNav();
     });
 });

@@ -1,6 +1,5 @@
 const reservationPopup = document.getElementById("reservationPopUp");
 const reservationCloseButton = document.getElementById("closeReservationMenu");
-const growitoFormDiv = document.getElementById("growitoForm");
 const headerDiv = document.getElementById("header");
 
 const reservationButtons = Array.from(document.getElementsByClassName("reservation"));

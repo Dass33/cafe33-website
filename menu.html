@@ -10,8 +10,8 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="font-serif min-w-80 bg-zinc-200" id="home"
-	style="background-image: url(./src/img/wrinkled-paper-white.jpg); background-repeat: repeat;">
+<body class="font-serif min-w-80 bg-zinc-200 bg-repeat" id="home"
+	style="background-image: url(./src/img/wrinkled-paper-white.jpg);">
 
 	<div id="menu" class="h-0 w-full fixed top-0 left-0 bg-black/90 overflow-x-hidden duration-500 z-50">
 		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent hover:bg-transparent hover:text-white"
@@ -28,7 +28,8 @@
 				<img src="./src/img/cafe33_logo_white.png" alt="cafe33 logo"
 					class="relative mr-auto ml-auto mb-5 w-40 sm:w-52 md:w-64"></a>
 
-			<a class="p-2 block border border-white mb-5" href="#home">Menu</a>
+			<button
+				class="homeButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Menu</button>
 			<button
 				class="reservation p-2 block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Rezervace</button>
 			<button
@@ -65,12 +66,12 @@
 	</div>
 
 
-	<div class="block fixed w-fit h-40 right-3 bottom-3 z-40 text-black">
-		<a href="#home">
+	<div class="block fixed w-fit h-40 right-3 -bottom-8 z-40 text-black">
+		<a class="homeButton">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="10 0 4 24" stroke-width="0.3"
-				stroke="currentColor" class="h-full w-full">
+				stroke="currentColor" class="h-full w-full cursor-pointer">
 				<path stroke-linecap="round" stroke-linejoin="round"
-					d="M12 21V8M12 21l1.5-1.75M12 21l-1.5-1.75" />
+					d="M12 3V16M12 3l1.5 1.75M12 3l-1.5 1.75" />
 			</svg>
 		</a>
 	</div>
@@ -102,6 +103,49 @@
 			</div>
 
 		</div>
+	</div>
+
+	<div class="h-64 sm:h-80 md:h-96 bg-black/90 mt-14 px-4 text-center">
+		<div
+			class="mx-auto max-w-[60rem] text-sm sm:text-lg md:text-xl grid grid-cols-3 pt-8 md:pt-12 text-white divide-x divide-dashed">
+			<div class="">
+				<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">Najdete
+					nás:</h3>
+				<div class="text-gray-300">
+					<p>Senohraby,</p>
+					<p>Hlavní 33</p>
+					<p>251 66</p>
+				</div>
+			</div>
+			<div>
+				<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">Rychlé
+					odkazy:</h3>
+				<div class="text-gray-200">
+					<a class="block" href="./menu.html">Menu</a>
+					<button
+						class="w-full reservation block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200">Rezervace</button>
+					<button
+						class="navButton w-full block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200">Catering</button>
+					<a class="navButton w-full block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200"
+						href="#">Akce</a>
+				</div>
+			</div>
+			<div>
+				<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">Dejte nám
+					vědět</h3>
+				<div class="text-gray-300">
+					<a href="mailto:info@cafe33.cz">info@cafe33.cz</a>
+					<p>+420 737 850 845</p>
+					<p><a href="https://www.instagram.com/cafe33.cz/">Instagram</a></p>
+					<p><a href="https://www.facebook.com/cafe33.cz/">Facebook</a></p>
+				</div>
+			</div>
+		</div>
+		<p class="relative mt-16 sm:mt-20 md:mt-32 text-sm text-gray-400">© 2024 Cafe33 |
+			<a href="https://github.com/Dass33/cafe33-website" target="_blank">
+				<i class="fa fa-github fa-x" aria-hidden="true"></i>
+			</a>
+		</p>
 	</div>
 
 	<script src="./dist/reservation.js"></script>
