@@ -33,62 +33,65 @@
 				class="reservation p-2 block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Rezervace</button>
 			<button
 				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Catering</button>
-			<button
-				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Akce</button>
+			<a class="p-2 block border border-white mb-5" href="#">Akce</a>
 			<a class="p-2 block border border-white mb-5" href="#">Galerie</a>
 			<a class="p-2 block border border-white mb-5" href="#">O
 				nás</a>
 		</div>
-	</div <div id="header" class="block text-center fixed w-full py-2 top-0 z-40">
-
-	<a href="https://www.facebook.com/cafe33.cz/" class="">
-		<svg class="inline float-left ml-3 mt-2 lg:mt-2 w-7 text-white" aria-hidden="true" focusable="false"
-			data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 320 512">
-			<path fill="currentColor"
-				d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-				class=""></path>
-		</svg>
-	</a>
-
-	<a href="https://www.instagram.com/cafe33.cz/" class="">
-		<svg class="w-11 inline float-left ml-3 mt-1 lg:mt-2 text-white" aria-hidden="true" data-prefix="fab"
-			data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-			<path fill="currentColor"
-				d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-				class=""></path>
-		</svg>
-
-	</a>
-	<div class="h-svh hidden">
-		<div class="absolute bottom-0 right-3 h-56 text-white">
-			<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="5 0 9 24"
-				stroke-width="0.3" stroke="currentColor" class="size-6">
-				<path stroke-linecap="round" stroke-linejoin="round"
-					d="M13.5 19.25 12 21m0 0-1.5-1.75M12 21V3" />
-			</svg>
-		</div>
 	</div>
 
-	<button class="w-9 float-right mr-4 mt-1 lg:mr-8 lg:mt-3 text-white bg-transparent hover:bg-transparent hover:text-white"
-		id="menuButton">
-		<hr class="mt-3 h-0.5 bg-white">
-		<hr class="mt-3 h-0.5 bg-white">
-		<hr class="mt-3 h-0.5 bg-white">
-	</button>
 
-	<button class="w-9 float-right mr-6 lg:mr-8 lg:mt-2 text-white bg-transparent hover:bg-transparent hover:text-white"
-		id="mapButton">
+	<div id="header" class="block text-center fixed w-full py-2 top-0 z-40">
+
+		<a href="https://www.facebook.com/cafe33.cz/" class="">
+			<svg class="inline float-left ml-3 mt-2 lg:mt-2 w-7 text-white" aria-hidden="true"
+				focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+				<path fill="currentColor"
+					d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+					class=""></path>
+			</svg>
+		</a>
+
+		<a href="https://www.instagram.com/cafe33.cz/" class="">
+			<svg class="w-11 inline float-left ml-3 mt-1 lg:mt-2 text-white" aria-hidden="true"
+				data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 448 512">
+				<path fill="currentColor"
+					d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+					class=""></path>
+			</svg>
+
+		</a>
+		<div class="h-svh hidden">
+			<div class="absolute bottom-0 right-3 h-56 text-white">
+				<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+					viewBox="5 0 9 24" stroke-width="0.3" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M13.5 19.25 12 21m0 0-1.5-1.75M12 21V3" />
+				</svg>
+			</div>
+		</div>
+
+		<button class="w-9 float-right mr-4 mt-1 lg:mr-8 lg:mt-3 text-white bg-transparent hover:bg-transparent hover:text-white"
+			id="menuButton">
+			<hr class="mt-3 h-0.5 bg-white">
+			<hr class="mt-3 h-0.5 bg-white">
+			<hr class="mt-3 h-0.5 bg-white">
+		</button>
+
+		<button class="w-9 float-right mr-6 lg:mr-8 lg:mt-2 text-white bg-transparent hover:bg-transparent hover:text-white"
+			id="mapButton">
 
 
-		<svg id="mapIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-			stroke="currentColor" class="size-14">
-			<path stroke-linecap="round" stroke-linejoin="round"
-				d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-			<path stroke-linecap="round" stroke-linejoin="round"
-				d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-		</svg>
-	</button>
+			<svg id="mapIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+				stroke-width="1.5" stroke="currentColor" class="size-14">
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+			</svg>
+		</button>
 	</div>
 
 
@@ -337,78 +340,47 @@
 		</div>
 
 
-
 		<div class="xl:mx-36 mx-auto max-w-[28rem] sm:max-w-[60rem] md:max-w-[60rem] xl:max-w-none">
-			<h2 id="akce" class="mt-32 text-5xl">Akce</h2>
+			<h2 id="catering" class="mt-32 text-5xl">Catering</h2>
 			<div class="lg:mb-4 flex flex-row justify-center ">
 				<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
 				<span class="fa fa-star-o fa-2x text-black"></span>
 				<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
 			</div>
-
 			<div class="inline-block mt-4 sm:mt-10 md:mt-14">
-				<div
-					class="md:bg-black/40 text-black md:text-white md:float-left w-full md:w-1/3 p-4 md:rounded-lg xl:mt-0">
-					<h3 class="mb-3 text-3xl lg:text-5xl">Výstava obrazů</h3>
-					<p class="text-xl md:text-2xl lg:text-3xl">Et accusamus possimus aliquid
-						molestias in id.
-						Quis ut beatae
-						totam. Tempora
-						magnam alias laboriosam. Reprehenderit accusamus atque sequi. Omnis
-						nostrum eum magnam.</p>
-
-					<button id=""
-						class="reservation mt-4 md:text-white text-3xl md:text-4xl lg:text-5xl border-black md:border-white border px-4 py-1 bg-transparent hover:bg-transparent hover:text-white">Rezervace</button>
-				</div>
-				<img src="src/img/cafe33_obraz2.jpg" alt="vystava obrazu"
-					class="mx-auto md:float-right w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
+				<p
+					class="md:bg-black/40 text-black md:text-white md:float-left w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:mt-12 md:rounded-lg xl:mt-20">
+					Nabízíme
+					profesionální
+					catering na míru
+					pro
+					každou
+					příležitost
+					–
+					od firemních večírků
+					a konferencí, přes rodinné oslavy, až po svatební hostiny.
+				</p>
+				<img src="./src/img/catering_rizecky.jpg" alt="catering rizecky"
+					class="mx-auto md:float-right w-full md:w-3/5 py-3 md:py-0 md:rounded-xl md:mt-4">
 			</div>
+			<div class="inline-block mt-4 sm:mt-10 md:mt-14">
 
+				<p
+					class="md:bg-black/40 text-black md:text-white md:float-right w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:mt-20 md:rounded-lg">
+					Naše nabídka je široká a flexibilní, ať už preferujete tradiční
+					českou&nbsp;kuchyni nebo
+					moderní gastronomické trendy.</p>
 
-
-
-			<div class="xl:mx-36 mx-auto max-w-[28rem] sm:max-w-[60rem] md:max-w-[60rem] xl:max-w-none">
-				<h2 id="catering" class="mt-32 text-5xl">Catering</h2>
-				<div class="lg:mb-4 flex flex-row justify-center ">
-					<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
-					<span class="fa fa-star-o fa-2x text-black"></span>
-					<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
-				</div>
-				<div class="inline-block mt-4 sm:mt-10 md:mt-14">
-					<p
-						class="md:bg-black/40 text-black md:text-white md:float-left w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:rounded-lg">
-						Nabízíme
-						profesionální
-						catering na míru
-						pro
-						každou
-						příležitost
-						–
-						od firemních večírků
-						a konferencí, přes rodinné oslavy, až po svatební hostiny.
-					</p>
-					<img src="./src/img/catering_rizecky.jpg" alt="catering rizecky"
-						class="mx-auto md:float-right w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
-				</div>
-				<div class="inline-block mt-4 sm:mt-10 md:mt-20">
-
-					<p
-						class="md:bg-black/40 text-black md:text-white md:float-right w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:rounded-lg">
-						Naše nabídka je široká a flexibilní, ať už preferujete tradiční
-						českou&nbsp;kuchyni nebo
-						moderní gastronomické trendy.</p>
-
-					<img src="./src/img/catering_roastbeef.jpg" alt="catering roastbeef"
-						class="md:float-left w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
-				</div>
+				<img src="./src/img/catering_roastbeef.jpg" alt="catering roastbeef"
+					class="md:float-left w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
 			</div>
 		</div>
-		<div class="h-64 sm:h-80 md:h-96 bg-black/90 mt-14 w-full">
+
+		<div class="h-64 sm:h-80 md:h-96 bg-black/90 mt-14 px-3 text-center">
 			<div
 				class="mx-auto max-w-[60rem] text-sm sm:text-lg md:text-xl grid grid-cols-3 pt-8 md:pt-12 text-white divide-x divide-dashed">
 				<div class="">
-					<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">
-						Najdete
+					<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-0 font-bold">Najdete
 						nás:</h3>
 					<div class="text-gray-300">
 						<p>Senohraby,</p>
@@ -417,8 +389,7 @@
 					</div>
 				</div>
 				<div class="">
-					<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">
-						Rychlé
+					<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-0 font-bold">Rychlé
 						odkazy:</h3>
 					<div class="text-gray-200">
 						<a class="block" href="./menu.html">Menu</a>
@@ -426,26 +397,22 @@
 							class="w-full reservation block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200">Rezervace</button>
 						<button
 							class="navButton w-full block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200">Catering</button>
-						<button
-							class="navButton w-full block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200">Akce</button>
+						<a class="navButton w-full block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200"
+							href="#">Akce</a>
 					</div>
 				</div>
 				<div class="">
-					<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">
-						Dejte nám
+					<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-0 font-bold">Dejte nám
 						vědět</h3>
 					<div class="text-gray-300">
 						<a href="mailto:info@cafe33.cz">info@cafe33.cz</a>
 						<p>+420 737 850 845</p>
-						<p><a href="https://www.instagram.com/cafe33.cz/">Instagram</a>
-						</p>
-						<p><a href="https://www.facebook.com/cafe33.cz/">Facebook</a>
-						</p>
+						<p><a href="https://www.instagram.com/cafe33.cz/">Instagram</a></p>
+						<p><a href="https://www.facebook.com/cafe33.cz/">Facebook</a></p>
 					</div>
 				</div>
 			</div>
-			<p class="absolute left-0 right-0 bottom-5 lg:bottom-7 text-sm text-gray-400">©
-				2024 Cafe33 |
+			<p class="absolute left-0 right-0 bottom-5 lg:bottom-7 text-sm text-gray-400">© 2024 Cafe33 |
 				<a href="https://github.com/Dass33/cafe33-website" target="_blank">
 					<i class="fa fa-github fa-x" aria-hidden="true"></i>
 				</a>
