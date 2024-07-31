@@ -12,6 +12,7 @@ function openNav() {
 		if (mapIcon) mapIcon.style.display = "none";
 		if (headerDiv) headerDiv.style.display = "none";
 		document.body.style.overflowY = "hidden"
+		if (cafeLogo) cafeLogo.style.visibility = "hidden";
 	}
 }
 
@@ -24,7 +25,8 @@ function closeNav() {
 			menuButton.style.visibility = "visible";
 			if (mapIcon) mapIcon.style.display = "block";
 			if (headerDiv) headerDiv.style.display = "block";
-		}, 400);
+			if (cafeLogo) cafeLogo.style.visibility = "visible";
+		}, 300);
 	}
 	document.body.style.overflowY = "scroll"
 }

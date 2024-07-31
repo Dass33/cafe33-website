@@ -3,6 +3,7 @@ const lunchMenuPopUp = document.getElementById("lunchMenuPopUp");
 const lunchMenuButton = document.getElementById("lunchMenuButton");
 const lunchCloseButton = document.getElementById("closeLunchMenu");
 const footerLeft = document.getElementById("footerLeft");
+const lunchMenuButtonDiv = document.getElementById("lunchMenuButtonDiv");
 function closeLunchMenu() {
     if (lunchMenuPopUp) {
         lunchMenuPopUp.style.display = "none";
@@ -34,4 +35,10 @@ if (lunchMenuPopUp) {
     lunchMenuPopUp.addEventListener("click", () => {
         closeLunchMenu();
     });
+}
+const currentDate = new Date().getDay();
+const wednesday = 3;
+const saturday = 5;
+if (currentDate >= wednesday && currentDate < saturday && lunchMenuButtonDiv) {
+    lunchMenuButtonDiv.style.display = "block";
 }

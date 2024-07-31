@@ -10,8 +10,8 @@ if (reservationPopup) {
 			reservationPopup.style.display = "block";
 			document.body.style.overflowY = "hidden"
 			closeNav();
-			if (mapIcon) mapIcon.style.display = "none";
-			if (headerDiv) headerDiv.style.display = "none";
+			// if (mapIcon) mapIcon.style.display = "none";
+			// if (headerDiv) headerDiv.style.display = "none";
 		});
 	});
 }
@@ -20,8 +20,8 @@ if (reservationCloseButton && reservationPopup) {
 	reservationCloseButton.addEventListener("click", () => {
 		reservationPopup.style.display = "none";
 		document.body.style.overflowY = "scroll"
-		if (headerDiv) headerDiv.style.display = "block";
-		if (mapIcon) mapIcon.style.display = "block";
+		// if (headerDiv) headerDiv.style.display = "block";
+		// if (mapIcon) mapIcon.style.display = "block";
 	});
 }
 
