@@ -6,8 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cafe33</title>
 	<link href="./dist/styles.css" rel="stylesheet">
+	<link rel="icon" href="src/img/cafe33_Icon.png">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--if the normalized sheet does not work delete it, absolute positioning issue-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 
 <body class="font-serif min-w-80 bg-amber-100/70" id="home" style="background-image: url(); background-repeat: repeat;">
@@ -34,7 +37,7 @@
 				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Catering</button>
 			<button
 				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Akce</button>
-			<a class="p-2 block border border-white mb-5" href="#">Galerie</a>
+			<a class="p-2 block border border-white mb-5" href="./galerie.html">Galerie</a>
 			<a class="p-2 block border border-white mb-5" href="#">O
 				nás</a>
 		</div>
@@ -327,12 +330,17 @@
 
 		<div class="xl:mx-36 mx-auto max-w-[32rem] sm:max-w-[60rem] md:max-w-[60rem] xl:max-w-none">
 			<h2 id="catering" class="mt-32 text-5xl">Catering</h2>
-			<div class="lg:mb-4 flex flex-row justify-center ">
-				<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
-				<span class="fa fa-star-o fa-2x text-black"></span>
-				<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
+			<div class="lg:mb-2 lg:mt-1 flex flex-row justify-center ">
+				<hr class="w-40 mt-5 mx-8 border-[1px] border-black">
+				<!-- <span class="fa fa-star-o fa-2x text-black"></span> -->
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="size-11">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+				</svg>
+				<hr class="w-40 mt-5 mx-8 border-[1px] border-black">
 			</div>
-			<div class="inline-block mt-4 sm:mt-10 md:mt-14">
+			<div class="inline-block mt-4 sm:mt-10">
 				<p
 					class="md:bg-black/80 text-black md:text-white md:float-left w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:rounded-lg">
 					Nabízíme
@@ -361,43 +369,67 @@
 			</div>
 		</div>
 
-		<div class="relative m-auto max-w-[32rem]">
+		<div class="relative m-auto max-w-[32rem] lg:max-w-[48rem] lg:h-[38rem]">
 			<h2 id="akce" class="mt-20 text-5xl">Galerie</h2>
-			<div class="lg:mb-4 flex flex-row justify-center ">
-				<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
-				<span class="fa fa-star-o fa-2x text-black"></span>
-				<hr class="w-40 mt-4 mx-8 border-[1px] border-black">
+			<div class="lg:mb-2 lg:mt-1 flex flex-row justify-center ">
+				<hr class="w-40 mt-5 mx-8 border-[1px] border-black">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="size-10">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+				</svg>
+				<hr class="w-40 mt-5 mx-8 border-[1px] border-black">
 			</div>
 			<div class="text-center">
-				<span class="dot cursor-pointer h-4 w-4 my-1 bg-gray-800/90 inline-block rounded-full"
-					onclick="currentGalleryImage(1)"></span>
-				<span class="dot cursor-pointer h-4 w-4 my-1 bg-gray-800/90 inline-block rounded-full"
-					onclick="currentGalleryImage(2)"></span>
-				<span class="dot cursor-pointer h-4 w-4 my-1 bg-gray-800/90 inline-block rounded-full"
-					onclick="currentGalleryImage(3)"></span>
+				<span class="galleryDot cursor-pointer h-4 w-4 my-1 border-4 border-gray-800/90 bg-white inline-block rounded-full"
+					onclick="switchGalleryImage(0)"></span>
+				<span class="galleryDot cursor-pointer h-4 w-4 my-1 border-4 border-gray-800/90 bg-gray-800 inline-block rounded-full"
+					onclick="switchGalleryImage(1)"></span>
+				<span class="galleryDot cursor-pointer h-4 w-4 my-1 border-4 border-gray-800/90 bg-gray-800 inline-block rounded-full"
+					onclick="switchGalleryImage(2)"></span>
+				<span class="galleryDot cursor-pointer h-4 w-4 my-1 border-4 border-gray-800/90 bg-gray-800 inline-block rounded-full"
+					onclick="switchGalleryImage(3)"></span>
+				<span class="galleryDot cursor-pointer h-4 w-4 my-1 border-4 border-gray-800/90 bg-gray-800 inline-block rounded-full"
+					onclick="switchGalleryImage(4)"></span>
 			</div>
 
 			<div class="galleryImage">
 				<img src="src/img/venkovni_posezeni.jpeg" style="width:100%">
-				<div class="text">Caption Text</div>
+				<div class="text-lg">Venkovní posezení</div>
 			</div>
 
 			<div class="galleryImage hidden">
 				<img src="src/img/cafe_vnitrek.jpeg" style="width:100%">
-				<div class="text">Caption Two</div>
+				<div class="text-lg">Vnitřek kavárny</div>
 			</div>
 
 			<div class="galleryImage hidden">
 				<img src="src/img/cafe33_venku.png" style="width:100%">
-				<div class="text">Caption Three</div>
+				<div class="text-lg">Kavárna z venku</div>
 			</div>
 
-			<a class="left-0 cursor-pointer absolute top-1/2 w-auto p-4 -mt-8 text-white text-5xl transition-colors select-none"
-				onclick="plusSlides(-1)">❮</a>
-			<a class="right-0  cursor-pointer absolute top-1/2 w-auto p-4 -mt-8 text-white text-5xl transition-colors select-none"
-				onclick="plusSlides(1)">❯</a>
+			<div class="galleryImage hidden">
+				<img src="src/img/ukazka_kavy.jpeg" style="width:100%">
+				<div class="text-lg">Ukázka naší kávy</div>
+			</div>
+
+			<div class="galleryImage hidden">
+				<img src="src/img/kavovar.jpg" style="width:100%">
+				<div class="text-lg">Zde vám připravíme kávu</div>
+			</div>
+
+			<a class="left-0 cursor-pointer absolute top-1/2 w-auto p-4 -mt-4 text-white text-5xl transition-colors select-none"
+				onclick="nextImage(-1)">❮</a>
+			<a class="right-0  cursor-pointer absolute top-1/2 w-auto p-4 -mt-4 text-white text-5xl transition-colors select-none"
+				onclick="nextImage(1)">❯</a>
 
 		</div>
+
+		<a href="./galerie.html"
+			class="cursor-pointer text-black text-3xl md:text-4xl lg:text-5xl border-black border px-4 py-1 bg-transparent hover:bg-transparent hover:text-black">Celá
+			galerie</a>
 
 
 		<div class="h-64 sm:h-80 md:h-96 bg-black/90 mt-14 w-full">
@@ -450,6 +482,7 @@
 		</div>
 
 	</div>
+	<script src="./dist/gallery.js"></script>
 	<script src="./dist/map_menu.js"></script>
 	<script src="./dist/reservation.js"></script>
 	<script src="./dist/lunch_menu.js"></script>

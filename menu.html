@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cafe33 Menu</title>
 	<link href="./dist/styles.css" rel="stylesheet">
+	<link rel="icon" href="src/img/cafe33_Icon.png">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="font-serif min-w-80 bg-amber-100/60" id="home" style="background-image: url();">
+<body class="font-serif min-w-80 bg-amber-100/70" id="home" style="background-image: url();">
 
 	<div id="menu" class="h-0 w-full fixed top-0 left-0 bg-black/90 overflow-x-hidden duration-500 z-50">
 		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent hover:bg-transparent hover:text-white"
@@ -34,17 +35,17 @@
 				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Catering</button>
 			<button
 				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Akce</button>
-			<a class="p-2 block border border-white mb-5" href="#">Galerie</a>
+			<a class="p-2 block border border-white mb-5" href="./galerie.html">Galerie</a>
 			<a class="p-2 block border border-white mb-5" href="#">O
 				nás</a>
 		</div>
 	</div>
 
 
-	<div id="header" class="block text-center fixed w-full top-0 z-40 bg-black/80 xl:bg-transparent">
+	<div id="header" class="block text-center fixed w-full top-0 z-40">
 		<a href="./index.html">
 			<img src="src/img/cafe33_logo_white.png" alt="cafe33 logo"
-				class="w-32 overflow-hidden xl:w-40 block p-4 top-3 float-left xl:bg-black/40 rounded-br-lg"></a>
+				class="w-32 overflow-hidden xl:w-40 block p-4 top-3 float-left bg-black/40 rounded-br-lg"></a>
 
 		<div class="h-svh hidden">
 			<div class="absolute bottom-0 right-3 h-56 text-white">
@@ -111,16 +112,16 @@
 			<div class="">
 				<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">Najdete
 					nás:</h3>
-				<div class="text-gray-300">
+				<address class="text-gray-300">
 					<p>Senohraby,</p>
 					<p>Hlavní 33</p>
 					<p>251 66</p>
-				</div>
+				</address>
 			</div>
 			<div>
 				<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">Rychlé
 					odkazy:</h3>
-				<div class="text-gray-200">
+				<div class="text-gray-200 italic">
 					<a class="block" href="./menu.html">Menu</a>
 					<button
 						class="w-full reservation block bg-transparent text-gray-200 hover:bg-transparent hover:text-gray-200">Rezervace</button>
@@ -133,12 +134,12 @@
 			<div>
 				<h3 class="text-md sm:text-xl md:text-2xl lg:text-3xl pb-4 font-bold">Dejte nám
 					vědět</h3>
-				<div class="text-gray-300">
+				<address class="text-gray-300">
 					<a href="mailto:info@cafe33.cz">info@cafe33.cz</a>
 					<p>+420 737 850 845</p>
 					<p><a href="https://www.instagram.com/cafe33.cz/">Instagram</a></p>
 					<p><a href="https://www.facebook.com/cafe33.cz/">Facebook</a></p>
-				</div>
+				</address>
 			</div>
 		</div>
 		<p class="relative mt-16 sm:mt-20 md:mt-32 text-sm text-gray-400">© 2024 Cafe33 |
@@ -148,6 +149,7 @@
 		</p>
 	</div>
 
+	<script src="./dist/main.js"></script>
 	<script src="./dist/reservation.js"></script>
 	<script src="./dist/navigation_menu.js"></script>
 </body>
