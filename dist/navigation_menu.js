@@ -52,10 +52,12 @@ if (closeMenu && menuButton) {
 navButtons.forEach((navButton) => {
     navButton.addEventListener("click", () => {
         var _a;
-        const htmlBookmakr = (_a = navButton.textContent) === null || _a === void 0 ? void 0 : _a.replace(/\s+/g, "_");
-        const navTo = `./index.html#${htmlBookmakr === null || htmlBookmakr === void 0 ? void 0 : htmlBookmakr.toLowerCase()}`;
+        const htmlBookmakr = (_a = navButton.textContent) === null || _a === void 0 ? void 0 : _a.replace(/\s+/g, "_").toLowerCase();
+        let navTo = "./index.html#";
+        if (navButton.classList.contains("eng"))
+            navTo = "./indexEN.html#";
         if (navTo)
-            window.location.href = navTo;
+            window.location.href = navTo + htmlBookmakr;
         document.documentElement.scrollTop -= 80;
         closeNav();
     });
