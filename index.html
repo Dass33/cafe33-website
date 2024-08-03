@@ -11,10 +11,10 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="font-serif min-w-80 bg-amber-100/70" id="home" style="background-image: url(); background-repeat: repeat;">
+<body class="font-serif min-w-80 bg-amber-50/70" id="home" style="background-image: url(); background-repeat: repeat;">
 
 	<div id="menu" class="h-0 w-full fixed top-0 left-0 bg-black/90 overflow-x-hidden duration-500 z-10">
-		<button class="absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent hover:bg-transparent hover:text-white"
+		<button class="w-14 absolute top-1 right-2 lg:right-6 lg:top-4 text-white h-14 bg-transparent hover:bg-transparent hover:text-white"
 			id="closeMenu">
 			<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 				stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -36,14 +36,15 @@
 			<button
 				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">Akce</button>
 			<a class="p-2 block border border-white mb-5" href="./galerie.html">Galerie</a>
-			<a class="p-2 block border border-white mb-5" href="#">O
-				nás</a>
+			<button
+				class="navButton p-2 w-full block border border-white mb-5 bg-transparent text-white hover:bg-transparent hover:text-white">O
+				nás</button>
 		</div>
 	</div>
 	<div id="header" class="block text-center fixed w-full py-2 top-0 z-40">
 
 		<a href="https://www.facebook.com/cafe33.cz/" class="">
-			<svg class="inline float-left ml-3 mt-2 lg:mt-2 w-7 text-white" aria-hidden="true"
+			<svg class="inline float-left ml-3 mt-1 lg:mt-2 w-7 text-white" aria-hidden="true"
 				focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
 				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
 				<path fill="currentColor"
@@ -66,7 +67,7 @@
 		<button id="scrollLogo"
 			class="homeButton invisible bg-transparent hover:bg-transparent hover:text-white">
 			<img src="./src/img/cafe33_logo_white.png" alt="cafe33 logo"
-				class="w-24 lg:w-32 ml-2 lg:ml-10 mt-3 lg:mt-2 inline mx-auto"></button>
+				class="w-24 lg:w-32 ml-3 lg:ml-10 mt-3 lg:mt-2 inline mx-auto"></button>
 
 		<div class="h-svh hidden">
 			<div class="absolute bottom-0 right-3 h-56 text-white">
@@ -85,12 +86,12 @@
 			<hr class="mt-3 h-0.5 bg-white">
 		</button>
 
-		<button class="w-14 float-right mr-3 lg:mr-5 lg:mt-2 text-white bg-transparent hover:bg-transparent hover:text-white"
+		<button class="w-12 float-right mr-2 mt-1 lg:mr-5 lg:mt-3 text-white bg-transparent hover:bg-transparent hover:text-white"
 			id="mapButton">
 
 
 			<svg id="mapIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-				stroke-width="1.5" stroke="currentColor" class="size-14">
+				stroke-width="1.5" stroke="currentColor" class="size-12">
 				<path stroke-linecap="round" stroke-linejoin="round"
 					d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
 				<path stroke-linecap="round" stroke-linejoin="round"
@@ -318,7 +319,7 @@
 						nostrum eum magnam.</p>
 
 					<button id=""
-						class="mt-4 md:text-white text-3xl md:text-4xl lg:text-5xl border-black md:border-white border px-4 py-1 bg-transparent hover:bg-transparent hover:text-white">Rezervace</button>
+						class="mt-4 md:text-white text-3xl md:text-4xl lg:text-5xl border-black md:border-white border px-4 py-1 bg-transparent hover:bg-transparent md:hover:text-white">Rezervace</button>
 				</div>
 				<img src="src/img/cafe33_obraz2.jpg" alt="vystava obrazu"
 					class="mx-auto md:float-right w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
@@ -430,6 +431,42 @@
 			class="cursor-pointer text-black text-3xl md:text-4xl lg:text-5xl border-black border px-4 py-1 bg-transparent hover:bg-transparent hover:text-black">Celá
 			galerie</a>
 
+
+		<div class="xl:mx-36 mx-auto max-w-[32rem] sm:max-w-[60rem] md:max-w-[60rem] xl:max-w-none">
+			<h2 id="o_nás" class="mt-32 text-5xl">O nás</h2>
+			<div class="lg:mb-2 lg:mt-1 flex flex-row justify-center ">
+				<hr class="w-40 mt-5 mx-8 border-[1px] border-black">
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="size-10">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+				</svg>
+				<hr class="w-40 mt-5 mx-8 border-[1px] border-black">
+			</div>
+			<div class="inline-block mt-4 sm:mt-10">
+				<p
+					class="md:bg-black/80 text-black md:text-white md:float-left w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:rounded-lg">
+					Naše kavárna byla otevřena 4.9.2020 v rámci celkové rekonstrukce budovy depo33 z
+					roku 1931 (původně sklady
+					obilí, později uhelné sklady) u senohrabského nádraží.</p>
+				<img src="./src/img/cafe33_venku.png" alt="catering rizecky"
+					class="mx-auto md:float-right w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
+			</div>
+			<div class="inline-block mt-4 sm:mt-10 md:mt-20">
+
+				<p
+					class="md:bg-black/80 text-black md:text-white md:float-right w-full md:w-1/3 text-2xl md:text-2xl lg:text-4xl p-4 md:rounded-lg">
+					U nás si můžete objednat skvělou kávu, lahodné zákusky, míchané
+					nápoje, víno... a nově i vinikajcí jídlo.</p>
+
+				<img src="./src/img/cafe_vnitrek.jpeg" alt="catering roastbeef"
+					class="md:float-left w-full md:w-3/5 py-3 md:py-0 md:rounded-xl">
+			</div>
+		</div>
+
+		<h2 class="mx-4 my-8 lg:mt-16 lg:mb-20 text-3xl sm:text-4xl lg:text-5xl">Těšíme se na Vaši návštěvu!
+		</h2>
 
 		<div class="h-64 sm:h-80 md:h-96 bg-black/90 mt-14 w-full">
 			<div

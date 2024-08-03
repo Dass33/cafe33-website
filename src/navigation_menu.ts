@@ -50,9 +50,10 @@ if (closeMenu && menuButton) {
 
 navButtons.forEach((navButton) => {
 	navButton.addEventListener("click", () => {
-
-		const navTo = `./index.html#${(navButton.textContent)?.toLowerCase()}`;
+		const htmlBookmakr = navButton.textContent?.replace(/\s+/g, "_");
+		const navTo = `./index.html#${htmlBookmakr?.toLowerCase()}`;
 		if (navTo) window.location.href = navTo;
+		document.documentElement.scrollTop -= 80;
 		closeNav();
 	});
 });
