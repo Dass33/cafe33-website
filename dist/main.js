@@ -1,5 +1,4 @@
 "use strict";
-const hederDiv = document.getElementById("header");
 const scrollLogo = document.getElementById("scrollLogo");
 const cafeLogo = document.getElementById("cafeLogo");
 const headerLogo = document.getElementById("headerLogo");
@@ -8,8 +7,10 @@ function scrollHeader() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         if (scrollLogo)
             scrollLogo.style.visibility = "visible";
-        if (hederDiv)
-            hederDiv.style.backgroundColor = "#000000d0";
+        if (headerDiv) {
+            headerDiv.style.backgroundColor = "#000000d0";
+            headerDiv.style.zIndex = "50";
+        }
         if (cafeLogo)
             cafeLogo.style.visibility = "hidden";
         if (headerLogo)
@@ -18,8 +19,10 @@ function scrollHeader() {
     else {
         if (scrollLogo)
             scrollLogo.style.visibility = "hidden";
-        if (hederDiv)
-            hederDiv.style.backgroundColor = "transparent";
+        if (headerDiv) {
+            headerDiv.style.backgroundColor = "transparent";
+            headerDiv.style.zIndex = "auto";
+        }
         if (cafeLogo)
             cafeLogo.style.visibility = "visible";
         if (headerLogo)
