@@ -18,7 +18,7 @@ function scrollHeader() {
 		if (scrollLogo) scrollLogo.style.visibility = "hidden";
 		if (headerDiv) {
 			headerDiv.style.backgroundColor = "transparent";
-			headerDiv.style.zIndex = "auto";
+			headerDiv.style.zIndex = "30";
 		}
 		if (cafeLogo) cafeLogo.style.visibility = "visible";
 		if (headerLogo) headerLogo.style.backgroundColor = "#000000d0";
