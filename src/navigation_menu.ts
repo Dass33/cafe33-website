@@ -9,10 +9,10 @@ function openNav() {
 	if (menu && menuButton) {
 		menu.style.height = "100%";
 		menuButton.style.visibility = "hidden";
-		if (mapIcon) mapIcon.style.display = "none";
 		if (headerDiv) headerDiv.style.display = "none";
+
 		document.body.style.overflowY = "hidden"
-		if (cafeLogo) cafeLogo.style.visibility = "hidden";
+		if (mapIcon) { mapIcon.style.display = "none"; }
 	}
 }
 
@@ -23,7 +23,7 @@ function closeNav() {
 		menu.style.height = "0%";
 		setTimeout(() => {
 			menuButton.style.visibility = "visible";
-			if (mapIcon) mapIcon.style.display = "block";
+			if (mapIcon) { mapIcon.style.display = "block"; }
 			if (headerDiv) headerDiv.style.display = "block";
 			if (cafeLogo) cafeLogo.style.visibility = "visible";
 		}, 300);
