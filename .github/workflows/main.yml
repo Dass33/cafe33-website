@@ -21,4 +21,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # Directory to upload
-        server-dir: /tmp/test  # Remote directory
+        server-dir: /tmp/test/  # Remote directory
