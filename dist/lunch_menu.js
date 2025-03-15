@@ -39,6 +39,6 @@ if (lunchMenuPopUp) {
 const currentDate = new Date().getDay();
 const wednesday = 3;
 const saturday = 6;
-if (currentDate >= wednesday && currentDate < saturday && lunchMenuButtonDiv) {
-    lunchMenuButtonDiv.style.display = "block";
-}
+/* if (currentDate >= wednesday && currentDate < saturday && lunchMenuButtonDiv) {
+     lunchMenuButtonDiv.style.display = "block";
+}*/
