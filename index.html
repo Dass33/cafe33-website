@@ -180,6 +180,21 @@
 
                 </div>
 
+                <div id="currentSituationPopUp"
+                    class="fixed z-50 left-0 top-0 w-full h-full overflow-scroll flex items-center justify-center">
+                    <div class="relative rounded-lg bg-white/90 bg-slate-100 w-fit h-fit max-w-[780px]">
+                        <button class="w-14 absolute top-3 right-2 text-black h-14 hover:bg-transparent bg-transparent"
+                            id="closeCurrentSituation">
+                            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <img src="./src/img/objizna_trasa.webp" alt="objizdna trasa"
+                            class="max-w-[20rem] mx-auto rounded-lg">
+                    </div>
+                </div>
+
                 <button id="reservationButton1"
                     class="reservation mt-8 sm:mt-2 text-white text-4xl md:hidden border-white border px-4 py-1 sm:-translate-y-20 md:translate-y-0 bg-transparent hover:bg-transparent hover:text-white">Rezervace</button>
 
@@ -557,6 +572,7 @@
         </div>
 
     </div>
+    <script src="./dist/current_situation.js"></script>
     <script src="./dist/gallery.js"></script>
     <script src="./dist/map_menu.js"></script>
     <script src="./dist/reservation.js"></script>
